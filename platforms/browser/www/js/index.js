@@ -59,5 +59,19 @@ var app = {
 
         console.log("Here");
         console.log(navigator.camera);
+
+        var video = document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+              video.srcObject = stream;
+            })
+            .catch(function (err0r) {
+              console.log("Something went wrong!");
+              console.log(err0r);
+              alert(err0r);
+            });
+        }
     }
 };

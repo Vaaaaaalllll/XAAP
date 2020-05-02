@@ -40,6 +40,19 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Hello World</title>
+    <style>
+    #container {
+        margin: 0px auto;
+        width: 500px;
+        height: 375px;
+        border: 10px #333 solid;
+    }
+    #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+    }
+    </style>
 </head>
 
 <body>
@@ -53,6 +66,11 @@
             <button>Click Permission Camera</button>
             <p class="device"></p>
         </div>
+    </div>
+    <div id="container">
+        <video autoplay="true" id="videoElement">
+        
+        </video>
     </div>
 
     <script type="text/javascript" src="cordova.js"></script>
