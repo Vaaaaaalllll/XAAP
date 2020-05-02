@@ -101,6 +101,7 @@
     <platform name="android">
         <allow-intent href="market:*" />
         <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+        <gap:plugin name="cordova-plugin-android-permissions" source="npm"/>
         <uses-permission name="android.permission.CAMERA" />
     </platform>
     <platform name="ios">
