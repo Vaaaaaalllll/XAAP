@@ -100,6 +100,7 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
