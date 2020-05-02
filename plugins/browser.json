@@ -39,6 +39,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "orgXapp.test"
     }
   },
   "dependent_plugins": {
