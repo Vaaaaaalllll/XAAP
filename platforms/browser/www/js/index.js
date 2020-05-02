@@ -45,5 +45,19 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        var p = document.querySelector('.device');
+        
+        p.innerHTML = device.cordova + '<br/>' +
+            device.platform + '<br/>' +
+            device.model + '<br/>' +
+            device.uuid + '<br/>' +
+            device.version + '<br/>' +
+            device.manufacturer + '<br/>' +
+            device.isVirtual + '<br/>' +
+            device.serial + '<br/>';
+
+        console.log("Here");
+        console.log(navigator.camera);
     }
 };
