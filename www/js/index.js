@@ -133,11 +133,26 @@ var app = {
         var pp = document.querySelector('.device2');
 
         pp.innerHTML = device.cordova + '<br/>' +
-         +'Browser name  = '+browserName+'<br>'
-         +'Full version  = '+fullVersion+'<br>'
-         +'Major version = '+majorVersion+'<br>'
-         +'navigator.appName = '+navigator.appName+'<br>'
-         +'navigator.userAgent = '+navigator.userAgent+'<br>';
+        +'Browser name  = '+browserName+'<br>'
+        +'Full version  = '+fullVersion+'<br>'
+        +'Major version = '+majorVersion+'<br>'
+        +'navigator.appName = '+navigator.appName+'<br>'
+        +'navigator.userAgent = '+navigator.userAgent+'<br>';
+
+
+        var permissions = cordova.plugins.permissions;
+        permissions.requestPermission(permissions.CAMERA, success, error);
+ 
+        function error() {
+          alert('Camera permission is not turned on');
+        }
+         
+        function success( status ) {
+            alert(status);
+          if( !status.hasPermission ) error();
+        }
+
+
 
     }
 };
