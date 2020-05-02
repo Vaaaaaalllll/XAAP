@@ -36,6 +36,9 @@
     },
     "cordova-plugin-vibration": {
       "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "orgXapp.test"
     }
   },
   "dependent_plugins": {
