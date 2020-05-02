@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "orgXapp.test"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "orgXapp.test"
+    }
+  }
+}
