@@ -140,17 +140,33 @@ var app = {
         +'navigator.userAgent = '+navigator.userAgent+'<br>';
 
 
-        var permissions = cordova.plugins.permissions;
-        permissions.requestPermission(permissions.CAMERA, success, error);
+        // var permissions = cordova.plugins.permissions;
+        // permissions.requestPermission(permissions.CAMERA, success, error);
  
-        function error() {
-          alert('Camera permission is not turned on');
-        }
+        // function error() {
+        //   alert('Camera permission is not turned on');
+        // }
          
-        function success( status ) {
-            alert(status);
-          if( !status.hasPermission ) error();
-        }
+        // function success( status ) {
+        //     alert(status);
+        //   if( !status.hasPermission ) error();
+        // }
+
+
+        var Per = window.plugins.Permission;
+ 
+        var per = 'android.permission.RECORD_AUDIO';
+         
+        Per.has(per, function(results) {
+            if (!results[per]) {
+                Per.request(per, function(results) {
+                    if (result[per]) {
+                        // permission is granted
+                        alert('granted');
+                    }
+                }, alert)
+            }
+        }, alert)
 
 
 

@@ -42,6 +42,9 @@
     },
     "cordova-plugin-android-permissions": {
       "PACKAGE_NAME": "orgXapp.test"
+    },
+    "cordova-plugin-permission": {
+      "PACKAGE_NAME": "orgXapp.test"
     }
   },
   "dependent_plugins": {
