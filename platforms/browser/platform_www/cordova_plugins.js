@@ -412,19 +412,6 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.permissions"
         ]
-    },
-    {
-        "file": "plugins/cordova-plugin-permission/www/index.js",
-        "id": "cordova-plugin-permission.Permission",
-        "pluginId": "cordova-plugin-permission",
-        "clobbers": [
-            "window.plugins.Permission"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-permission/tests/index.spec.js",
-        "id": "cordova-plugin-permission.tests",
-        "pluginId": "cordova-plugin-permission"
     }
 ];
 module.exports.metadata = 
@@ -443,8 +430,7 @@ module.exports.metadata =
     "cordova-plugin-network-information": "1.3.4",
     "cordova-plugin-vibration": "2.1.6",
     "cordova-plugin-whitelist": "1.3.4",
-    "cordova-plugin-android-permissions": "1.0.2",
-    "cordova-plugin-permission": "0.1.0"
+    "cordova-plugin-android-permissions": "1.0.2"
 }
 // BOTTOM OF METADATA
 });

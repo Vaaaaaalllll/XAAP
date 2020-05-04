@@ -60,18 +60,6 @@ var app = {
         console.log("Here");
         console.log(navigator.camera);
 
-        function hasGetUserMedia() {
-            return (navigator.mediaDevices.getUserMedia);
-        }
-
-        if (hasGetUserMedia()) {
-          // Good to go!
-          alert('supported');
-        } else {
-          alert('getUserMedia() is not supported by your browser');
-        }
-
-
         var nVer = navigator.appVersion;
         var nAgt = navigator.userAgent;
         var browserName  = navigator.appName;
@@ -138,35 +126,6 @@ var app = {
         +'Major version = '+majorVersion+'<br>'
         +'navigator.appName = '+navigator.appName+'<br>'
         +'navigator.userAgent = '+navigator.userAgent+'<br>';
-
-
-        // var permissions = cordova.plugins.permissions;
-        // permissions.requestPermission(permissions.CAMERA, success, error);
- 
-        // function error() {
-        //   alert('Camera permission is not turned on');
-        // }
-         
-        // function success( status ) {
-        //     alert(status);
-        //   if( !status.hasPermission ) error();
-        // }
-
-
-        var Per = window.plugins.Permission;
- 
-        var per = 'android.permission.RECORD_AUDIO';
-         
-        Per.has(per, function(results) {
-            if (!results[per]) {
-                Per.request(per, function(results) {
-                    if (result[per]) {
-                        // permission is granted
-                        alert('granted');
-                    }
-                }, alert)
-            }
-        }, alert)
 
 
 

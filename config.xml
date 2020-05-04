@@ -102,9 +102,6 @@
     <platform name="android">
         <allow-intent href="market:*" />
         <gap:plugin name="cordova-plugin-whitelist" source="npm"/>
-        <gap:plugin name="cordova-plugin-android-permissions" source="npm"/>
-
-
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
